@@ -34,7 +34,7 @@ int main()
 	cout << Sequential_Search(-8, &DigitList) << "\n";
 	cout << "the task is done successfully\n"
 
-
+	cout << Sequential_Search(-9, &DigitList) << "\n";
 	
 	system("pause>0");
 }
