@@ -33,7 +33,7 @@ int main()
 	cout << Sequential_Search(434, &DigitList) << "\n";
 	cout << Sequential_Search(-8, &DigitList) << "\n";
 	cout << "the task is done successfully\n"
-
+	cout << "the task is done are you sure\n"
 
 	
 	system("pause>0");
