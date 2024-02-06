@@ -32,9 +32,22 @@ int main()
 	cout << Sequential_Search(9, &DigitList) << "\n";
 	cout << Sequential_Search(434, &DigitList) << "\n";
 	cout << Sequential_Search(-8, &DigitList) << "\n";
-	cout << "the task is done successfully\n"
-
-	cout << Sequential_Search(-9, &DigitList) << "\n";
+	cout << "the task is done successfully\n";
+	cout << "\n*****************\n";
+	cout << "\n*****************\n";
+	cout << Rec_Binary_Search(2, &DigitList) << "\n";
+	cout << Rec_Binary_Search(9, &DigitList) << "\n";
+	cout << Rec_Binary_Search(434, &DigitList) << "\n";
+	cout << Rec_Binary_Search(-8, &DigitList) << "\n";
+	cout << "the task is done successfully\n";
+	cout << "\n*****************\n";
+	cout << "\n*****************\n";
+	cout << Iter_Binary_Search(2, &DigitList) << "\n";
+	cout << Iter_Binary_Search(9, &DigitList) << "\n";
+	cout << Iter_Binary_Search(434, &DigitList) << "\n";
+	cout << Iter_Binary_Search(-8, &DigitList) << "\n";
+	cout << "the task is done successfully\n";
+	cout << "\n*****************\n";
 	
 	system("pause>0");
 }

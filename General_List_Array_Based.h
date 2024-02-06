@@ -80,7 +80,7 @@ void List_Insert_Ordering(List_Entry e, List<List_Entry, Max_Size>* pl) {
 	}
 	List_Insert(current, e, pl);
 }
-//implement binary search function and sequential search function 
+// implement sequential search function 
 template <typename List_Entry, int Max_Size>
 int Sequential_Search(List_Entry e, List<List_Entry, Max_Size>* pl) {
 	int Current, Size = List_Size(pl);
@@ -89,5 +89,35 @@ int Sequential_Search(List_Entry e, List<List_Entry, Max_Size>* pl) {
 		List_Retrieve(Current, &Temp, pl);
 		if (Temp == e) return Current;;
 	}
-	return -5;
+	return -1;
+}
+//implement binary search function 
+template <typename List_Entry, int Max_Size>
+int Rec_Binary_Search_Inside(List_Entry e, List<List_Entry, Max_Size>* pl, int start_index, int end_index) {
+	if (!(start_index > end_index)) {
+		int middel_index = (start_index + end_index) / 2;
+		if (pl->Entry[middel_index] == e)return middel_index;
+		else if (pl->Entry[middel_index] < e) {
+			Rec_Binary_Search_Inside(e, pl, middel_index + 1, end_index);
+		}
+		else {
+			Rec_Binary_Search_Inside(e, pl, start_index, middel_index- 1);
+		}
+	}
+	else return -1;
+};
+template <typename List_Entry, int Max_Size>
+int Rec_Binary_Search(List_Entry e, List<List_Entry, Max_Size>* pl) {
+	return Rec_Binary_Search_Inside(  e, pl,0,pl->Size-1);
+}
+template <typename List_Entry, int Max_Size>
+int Iter_Binary_Search(List_Entry e, List<List_Entry, Max_Size>* pl) {
+	int start_index =0, end_index = pl->Size-1, middel_index;
+	while (!(end_index < start_index))
+	{
+		middel_index = (start_index+end_index)/2;
+		if (pl->Entry[middel_index] == e) return middel_index;
+		else if (pl->Entry[middel_index] > e)  end_index = middel_index - 1;
+		else start_index = middel_index + 1;	
+	}return -1;
 }
