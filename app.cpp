@@ -35,5 +35,12 @@ int main()
 	cout << "can make any changes now\n";
 		cout << "can make any changes now\n";
 	cout << "can make any changes now\n";
+
+
+	cout << "\n*****************\n";
+	cout << "can make any changes now\n";
+	cout << "can make any changes now\n";
+	cout << "can make any changes now\n";
+	cout << "\n*****************\n";
 	system("pause>0");
 }
