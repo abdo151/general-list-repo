@@ -33,5 +33,8 @@ int main()
 	cout << Sequential_Search(434, &DigitList) << "\n";
 	cout << Sequential_Search(-8, &DigitList) << "\n";
 	cout << "now everthing is good \n";
+	cout << "now everthing is good \n";
+	cout << "now everthing is good \n";
+	cout << "now everthing is good \n";
 	system("pause>0");
 }
